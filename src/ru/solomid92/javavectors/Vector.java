@@ -13,4 +13,14 @@ public class Vector {
     double getScalar() {
         return Math.sqrt(this.x * this.x + this.y * this. y);
     }
+
+    void vectorMultiplyNumber(double number) {
+        this.x *= number;
+        this.y *= number;
+    }
+    
+    void vectorMultiplyVector(Vector vector) {
+        this.x *= vector.x;
+        this.y *= vector.y;
+    }
 }
