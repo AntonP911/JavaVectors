@@ -10,8 +10,28 @@ public class Vector {
         this.y = Y;
     }
 
-    double getLength() {
+    double getVectorLength() {
         return Math.sqrt(this.x * this.x + this.y * this. y);
+    }
+
+    void vectorSubstractionVector(Vector vector) {
+        this.x -= vector.x;
+        this.y -= vector.y;
+    }
+
+    void vectorSubtractionNumber(double number) {
+        this.x -= number;
+        this.y -= number;
+    }
+
+    void vectorAdditionVector (Vector vector) {
+        this.x += vector.x;
+        this.y += vector.y;
+    }
+
+    void vectorAdditionNumber (double number) {
+        this.x += number;
+        this.y += number;
     }
 
     void vectorMultiplyNumber(double number) {
