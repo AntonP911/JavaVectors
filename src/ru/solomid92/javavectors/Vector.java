@@ -5,9 +5,16 @@ public class Vector {
     double y;
 
 
-    void Vector (double X, double Y) {
+    Vector (double X, double Y) {
         this.x = X;
         this.y = Y;
+    }
+
+    void useVectorNormalize() {
+        double len = this.getVectorLength();
+        double inverselen = 1 / len;
+        this.x *= inverselen;
+        this.y *= inverselen;
     }
 
     double getVectorLength() {
